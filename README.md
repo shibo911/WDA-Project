@@ -1,2 +1,2 @@
 # WDA-Project
-E-commerce website
+Stuconnect
