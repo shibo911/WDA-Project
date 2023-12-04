@@ -1,13 +1,13 @@
 function addNewFeed() {
-    // Get input value
-    var postContent = document.getElementById('create-post').value;
+  // Get input value
+  var postContent = document.getElementById("create-post").value;
 
-    // Create a new feed element
-    var feed = document.createElement('div');
-    feed.className = 'feed';
+  // Create a new feed element
+  var feed = document.createElement("div");
+  feed.className = "feed";
 
-    // Construct the feed content
-    feed.innerHTML = `
+  // Construct the feed content
+  feed.innerHTML = `
         <!-- Your feed content structure goes here -->
     <div class="head">
         <div class="user">
@@ -29,7 +29,7 @@ function addNewFeed() {
         </div>
     `;
 
-    // Append the new feed to the feeds container
-    var feedsContainer = document.getElementById('feeds-container');
-    feedsContainer.appendChild(feed);
+  // Append the new feed to the feeds container
+  var feedsContainer = document.getElementById("feeds-container");
+  feedsContainer.appendChild(feed);
 }
