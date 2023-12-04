@@ -65,8 +65,22 @@ img{
     font-size: 0.9rem;
 }
 
+.middle .feeds .feed {
+    /* ... (existing feed styles) ... */
+    border: 1px solid var(--color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    /* ... (existing modal styles) ... */
+    background: var(--color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .btn:hover {
     opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary{
@@ -90,8 +104,11 @@ nav{
     position: fixed;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+nav .search-bar input[type="search"]:focus {
+    background: var(--color-secondary);
+}
 nav .container{
     display: flex;
     align-items: center;
@@ -151,11 +168,13 @@ main .container .left{
     cursor: pointer;
     translate: all 300ms ease;
     position: relative;
+    
 }
 
 
 .left .sidebar .menu-item:hover{
-    background: var(--color-light);
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 .left .sidebar i {
@@ -237,4 +256,13 @@ main .container .left{
 .middle .feed p{
     margin-left: 0.5rem;
 }
+
+
+
+
+
+
+
+
+
 
