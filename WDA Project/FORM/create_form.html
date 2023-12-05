@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create form</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+   <div class="page-container">
+    <div class="content-container">
+        <h1>Create Your Form</h1>
+        <form id="formBuilder">
+            <label for="formTitle">Enter title of your form:</label>
+            <br>
+            <input type="text" id="formTitle" required>
+            <br><br>
+            <label for="formDescription">Enter description of your form:</label>
+            <br>
+            <input type="text" id="formDescription" required>
+            <br><br>
+            <div id="fieldsContainer">
+                <!-- New fields added dynamically -->
+            </div>
+            <button id="addFieldBtn" class="btn-black">+</button>
+            <br><br>
+            <button id="saveFormBtn" class="btn-save">Save Form</button>
+        </form>
+        <p id="saveTime"></p>
+        
+    </div>
+   </div>
+   
+   <script src="create_form_script.js"></script>
+</body>
+</html>
