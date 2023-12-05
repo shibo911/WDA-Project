@@ -1,0 +1,119 @@
+/* Reset and basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: white;
+  height: 30px;
+  /* Add other styles as needed */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: white;
+  width: 200px;
+  height: 100vh; /* Full height of viewport */
+  position: fixed;
+  top: 50px; /* Height of the navbar */
+  left: 0;
+  /* Add other styles as needed */
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 200px; 
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(198, 220, 231); 
+  height: 100vh;
+  top: 50px;
+  left: 200px;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+  animation: gradientAnimation 10s infinite alternate; 
+  background: linear-gradient(to right, #8aa4b5, #260594);
+  background-image: url("formbg.avif");
+}
+.container1 {
+    background-color:rgb(102, 104, 239); 
+    border-radius: 10px; 
+    border: 4px solid white; 
+    height: 35%; 
+    width: 90%; 
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box; 
+  }
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  .content-wrapper{
+    width:21%;
+  }
+  .left-image {
+    max-width: 90%; 
+    border-radius: 8px;
+    border: solid 1px black;
+    margin-right:20px;
+    flex-shrink: 0; 
+  }
+  .right-content {
+    width: calc(100% - 280px - 20px); 
+    text-align: left;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start; 
+  }
+  div h2{
+    font-size: 45px;
+    color:white;
+    text-align: center;
+    animation: textEnlarge 2s ease-in-out infinite;
+  }
+  /* @keyframes textEnlarge {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+  } */
+  .buttons {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: auto; 
+  }
+  .transparent-button {
+    background-color: transparent; 
+    border: 4px solid black; 
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-left: 56px;
+    
+  }
+  .transparent-button:hover {
+    background-color:rgba(0, 128, 0, 0.344); 
+  }
+  
