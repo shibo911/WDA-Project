@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export function SignUp() {
   return (
@@ -25,13 +26,13 @@ export function SignUp() {
           </h2>
           <p className="mt-2 text-center text-base text-gray-600">
             Already have an account?{' '}
-            <a
-              href="#"
+            <Link
+              to="/sign-in"
               title=""
               className="font-medium text-black transition-all duration-200 hover:underline"
             >
               Sign In
-            </a>
+            </Link>
           </p>
           <form action="#" method="POST" className="mt-8">
             <div className="space-y-5">
